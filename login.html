@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Booking System</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f2f2;
+        }
+        .header {
+            background: #4a6cf7;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .event-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .event-box h3 { margin: 0; }
+        .btn {
+            background: #4a6cf7;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #3a56c4; }
+
+        .form-box {
+            margin-top: 25px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Event Booking System</div>
+
+<div class="container">
+
+    <h2>Upcoming Events</h2>
+
+    <div class="event-box">
+        <h3>Web Development Workshop</h3>
+        <p>Date: 5 Dec 2025</p>
+        <p>Location: Online</p>
+        <button class="btn">Book Now</button>
+    </div>
+
+    <div class="event-box">
+        <h3>Photography Masterclass</h3>
+        <p>Date: 12 Dec 2025</p>
+        <p>Location: Mumbai</p>
+        <button class="btn">Book Now</button>
+    </div>
+
+    <h2>Book Your Ticket</h2>
+
+    <div class="form-box">
+        <form>
+            <label>Your Name:</label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <label>Your Email:</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Select Event:</label>
+            <select>
+                <option>Web Development Workshop</option>
+                <option>Photography Masterclass</option>
+            </select>
+
+            <label>Number of Tickets:</label>
+            <input type="number" min="1" value="1">
+
+            <button class="btn" type="submit">Submit Booking</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
